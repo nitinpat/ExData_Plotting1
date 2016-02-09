@@ -16,6 +16,6 @@ plot(histogram, main = "Global Active Power",
      xlim = c(0, 6), ylim = c(0, 1200))
 
 ## Copy my plot to a PNG file
-dev.copy(png, file = "plot1.png")
+dev.copy(png, file = "ExData_Plotting1/plot1.png")
 ## Don't forget to close the PNG device!
 dev.off()
