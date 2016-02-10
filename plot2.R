@@ -13,7 +13,7 @@ f <- actualData$Global_active_power
 actualData$Global_active_power <- as.numeric(levels(f))[f]
 actualData <- subset(actualData, Global_active_power <= 6)
 
-plot(actualData$dtime, actualData$Global_active_power, type="l")
+plot(actualData$dtime, actualData$Global_active_power, type="l", xlab = "")
 
 ## Copy my plot to a PNG file
 dev.copy(png, file = "ExData_Plotting1/plot2.png")
